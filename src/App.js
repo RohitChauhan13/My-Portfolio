@@ -71,7 +71,7 @@ function App() {
     // Test server connection
   const testConnection = async () => {
     try {
-      const response = await fetch('https://k1hlsr76-5001.inc1.devtunnels.ms/api/test');
+      const response = await fetch('https://my-portfolio-server-lupl.onrender.com/api/test');
       const data = await response.json();
       console.log('Server connection:', data);
     } catch (error) {
@@ -84,7 +84,7 @@ function App() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://k1hlsr76-5001.inc1.devtunnels.ms/api/contact', {
+      const response = await fetch('https://my-portfolio-server-lupl.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
